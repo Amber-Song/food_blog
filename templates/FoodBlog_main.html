@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaughan & Amber</title>
+    <link rel="stylesheet" type="text/css" href="../static/FoodBlog.css" />
+
+    <script>
+      function dropDownList() {
+        var citylist = document.getElementById("city");
+        citylist.style.display = "block";
+      }
+      function closeDropDownList() {
+        var citylist = document.getElementById("city");
+        citylist.style.display = "none";
+      }
+    </script>
+
+    <!-- Google map -->
+    <script>
+      function myMap() {
+        /* mapCanvas is the map's html element */
+        let mapCanvas = document.getElementById("map");
+        /* mapOptions defines the property for map */
+        let mapOptions = {
+          /* center specified where to center the map, using latitude and longitude */
+          center: new google.maps.LatLng(-41.18, 174.47),
+          zoom: 5
+        };
+        /* map object creates using mapCanvas and mapOptions as parameters */
+        let map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script>
+
+    <style>
+      #city {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 25px;
+        right: 0;
+        background-color: rgb(255, 227, 134);
+        border: 1px solid black;
+        width: 20%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="t" class="web-page">
+      <!-- This is the title section -->
+      <h1 id="title">
+        <a href="./FoodBlog_main.html" class="nostyle">Vaughan & Amber</a>
+      </h1>
+      <p class="title-text">A blog for food exploration in New Zealand.</p>
+      <!-- This is a drop down list allowing you to choose city -->
+      <div class="dropdown">
+        <p class="title-dropdownIcon">
+          <a
+            href="javascript:void(0);"
+            onclick="dropDownList()"
+            title="explore by cities"
+            class="nostyle"
+            >City</a
+          >
+        </p>
+        <div
+          id="city"
+          style="display:none; position: absolute; z-index: 10; top: 25px; right: 0; min-width: 100px;"
+        >
+          <a href="./FoodBlog_dud.html" class="dropdown-item nostyle"
+            >Dunedin</a
+          >
+          <a href="./FoodBlog_akl.html" class="dropdown-item nostyle"
+            >Auckland</a
+          >
+          <a href="./FoodBlog_hlz.html" class="dropdown-item nostyle"
+            >Hamilton</a
+          >
+          <a href="./FoodBlog_wre.html" class="dropdown-item nostyle"
+            >Whangarei</a
+          >
+          <a href="./FoodBlog_dgr.html" class="dropdown-item nostyle"
+            >Dargaville</a
+          >
+          <a href="./FoodBlog_paihia.html" class="dropdown-item nostyle"
+            >Paihia</a
+          >
+          <a href="./FoodBlog_kke.html" class="dropdown-item nostyle"
+            >Kerikeri</a
+          >
+          <a href="./FoodBlog_wka.html" class="dropdown-item nostyle">Wanaka</a>
+          <a href="./FoodBlog_ivc.html" class="dropdown-item nostyle"
+            >Invercargill</a
+          ><br />
+          <span class="dropdown-item" onclick="closeDropDownList()"
+            >&times;</span
+          >
+        </div>
+      </div>
+      <hr />
+
+      <!-- Left area is map -->
+      <div class="map-container">
+        <div id="map" style="width:400px;height:500px;"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJxwIwrnhQXVOe61AVOtZEOfav4FseZGI&callback=myMap"></script>
+      </div>
+      <!-- Right area is introduction -->
+      <div class="transbox">
+        <p>
+          Vanghan:
+          <!-- Require: Vaughan's introduction. --><br /><br />
+          If you want to explore more on the home make vegan food, use the
+          search engine
+          <a href="http://potatocastles.com/" title="Go to potatocastles.com"
+            >Potato Castles.</a
+          >
+        </p>
+
+        <p>
+          Amber: I am a girl from China. Not Vegetarian yet, still craving for
+          meat and no matter how full I am, I always have space for the sweet
+          dessert.<br /><br />
+          Click
+          <a href="./FoodBlog_AP.html" title="Go to Afavorite.html"
+            >Amber's favorite dish</a
+          >
+          to see what are my favorite dishes that Vaughan cooked.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

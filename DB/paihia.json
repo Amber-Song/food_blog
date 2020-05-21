@@ -1,0 +1,62 @@
+[
+  {
+    "restaurant": "Third Wheel Coffee Co.",
+    "dish": [
+      {
+        "Name": "Iced Coffee (without Ice Cream)",
+        "pic": "../after_compression/coffee2.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Long Black",
+        "pic": "../after_compression/coffee4.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Ice Coffee",
+        "pic": "../after_compression/IceCoffee5.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "what",
+        "pic": "../after_compression/what10.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Bran Muffin",
+        "pic": "../after_compression/what11.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  }
+]

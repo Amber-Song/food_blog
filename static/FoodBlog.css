@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background-image: linear-gradient(
+    rgba(255, 211, 69, 0.7) 1%,
+    7%,
+    rgba(255, 211, 69, 0.2) 90%
+  );
+  background-image: -moz-linear-gradient(
+    rgba(255, 211, 69, 0.7) 1%,
+    7%,
+    rgba(255, 211, 69, 0.2) 90%
+  );
+  background-image: -o-linear-gradient(
+    rgba(255, 211, 69, 0.7) 1%,
+    7%,
+    rgba(255, 211, 69, 0.2) 90%
+  );
+  background-image: -webkit-linear-gradient(
+    rgba(255, 211, 69, 0.7) 1%,
+    7%,
+    rgba(255, 211, 69, 0.2) 90%
+  );
+  background-repeat: no-repeat;
+}
+.web-page {
+  width: 90%;
+  min-width: 830px;
+  min-height: 100%;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* h1 for title */
+h1 {
+  margin: 1% 7% 0%;
+  font-size: 80px;
+  font-weight: bold;
+}
+.title-text {
+  display: inline;
+  margin-left: 8%;
+  font-size: larger;
+}
+.dropdown {
+  display: inline;
+  position: relative;
+}
+.title-dropdownIcon {
+  display: inline;
+  margin-left: 55%;
+  font-size: larger;
+}
+#city {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 25px;
+  right: 0;
+  background-color: rgb(255, 227, 134);
+  border: 1px solid black;
+  width: 20%;
+}
+.dropdown-item {
+  font-size: larger;
+  text-decoration: none;
+  margin: 3% 7%;
+}
+hr {
+  border: 1px solid gray;
+}
+div.menu {
+  width: 31%;
+  max-width: 283px;
+  min-width: 230px;
+  margin-top: 2%;
+  float: left;
+  border: 1px solid black;
+  position: fixed;
+  top: 16%;
+  background-color: rgba(255, 211, 69, 0.4);
+}
+/* h2 for city */
+h2 {
+  margin-left: 40%;
+  margin-top: 3%;
+}
+/* h3 for restaurant */
+h3.menu {
+  font-size: medium;
+}
+h3.cont {
+  margin: 4% 2% 0%;
+  font-size: xx-large;
+}
+a.nostyle {
+  text-decoration: black;
+  color: black;
+}
+a.nostyle:visited {
+  text-decoration: black;
+  color: black;
+}
+div.content {
+  width: 65%;
+  margin-left: 33%;
+  float: left;
+}
+div.content::after {
+  clear: both;
+}
+h4 {
+  font-size: larger;
+}
+.dishimage-container {
+  display: block;
+  position: relative;
+  opacity: 1;
+  min-height: 320px;
+}
+img.image {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  -o-object-fit: contain;
+  display: block;
+  opacity: 1;
+}
+.image-container {
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px grey;
+  border-radius: 5px;
+}
+.information {
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 80%;
+}
+.image-container:hover .image {
+  opacity: 0.2;
+}
+.image-container:hover .information {
+  opacity: 1;
+}
+.tr {
+  display: table-row;
+  line-height: 180%;
+}
+.td {
+  display: table-cell;
+}
+.strong {
+  font-weight: bold;
+}
+.gray {
+  color: gray;
+}
+.comment {
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  display: none;
+  background-color: gray;
+  border: 1px solid gold;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  left: 320px;
+  height: 300px;
+  width: auto;
+  overflow: scroll;
+}
+a.back {
+  display: block;
+}
+.back {
+  cursor: n-resize;
+  display: block;
+  width: 100%;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+.back:visited {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+div.comment > div {
+  display: none;
+}
+div.transbox {
+  width: 50%;
+  margin: 15px;
+  display: inline-block;
+  background-color: wheat;
+  border: 1px solid wheat;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+div.transbox p {
+  margin: 30px 40px;
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+div.map-container {
+  float: left;
+  margin: 15px;
+}
+@media only screen and (min-width: 1014px) {
+  div.content {
+    margin-left: 302px;
+  }
+}
+
+/* This css is for the Amber-Preference file */
+.gallery {
+  display: none;
+}
+.list {
+  display: block;
+}
+div.row {
+  border-bottom: 1px solid wheat;
+  border-top: 1px solid wheat;
+  line-height: 200%;
+}
+.float-left {
+  float: left;
+}
+.inline {
+  display: inline-block;
+}

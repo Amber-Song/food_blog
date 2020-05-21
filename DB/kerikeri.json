@@ -1,0 +1,40 @@
+[
+  {
+    "restaurant": "Santeez Cafe (100% GF)",
+    "dish": [
+      {
+        "Name": "Burger",
+        "pic": "../after_compression/burger.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Chips",
+        "pic": "../after_compression/Chips1.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Soup",
+        "pic": "../after_compression/Soup1.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  }
+]

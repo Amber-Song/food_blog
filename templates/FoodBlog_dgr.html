@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaughan & Amber</title>
+    <link rel="stylesheet" type="text/css" href="../static/FoodBlog.css" />
+
+    <script>
+      function dropDownList() {
+        var citylist = document.getElementById("city");
+        citylist.style.display = "block";
+      }
+      function closeDropDownList() {
+        var citylist = document.getElementById("city");
+        citylist.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="t" class="web-page">
+      <!-- This is the title section -->
+      <h1 id="title">
+        <a href="./FoodBlog_main.html" class="nostyle">Vaughan & Amber</a>
+      </h1>
+      <p class="title-text">A blog for food exploration in New Zealand.</p>
+      <!-- This is a drop down list allowing you to choose city -->
+      <div class="dropdown">
+        <p class="title-dropdownIcon">
+          <a
+            href="javascript:void(0);"
+            onclick="dropDownList()"
+            title="explore by cities"
+            class="nostyle"
+            >City</a
+          >
+        </p>
+        <div
+          id="city"
+          style="display:none; position: absolute; z-index: 10; top: 25px; right: 0; min-width: 100px;"
+        >
+          <a href="./FoodBlog_dud.html" class="dropdown-item nostyle"
+            >Dunedin</a
+          >
+          <a href="./FoodBlog_akl.html" class="dropdown-item nostyle"
+            >Auckland</a
+          >
+          <a href="./FoodBlog_hlz.html" class="dropdown-item nostyle"
+            >Hamilton</a
+          >
+          <a href="./FoodBlog_wre.html" class="dropdown-item nostyle"
+            >Whangarei</a
+          >
+          <a href="./FoodBlog_dgr.html" class="dropdown-item nostyle"
+            >Dargaville</a
+          >
+          <a href="./FoodBlog_paihia.html" class="dropdown-item nostyle"
+            >Paihia</a
+          >
+          <a href="./FoodBlog_kke.html" class="dropdown-item nostyle"
+            >Kerikeri</a
+          >
+          <a href="./FoodBlog_wka.html" class="dropdown-item nostyle">Wanaka</a>
+          <a href="./FoodBlog_ivc.html" class="dropdown-item nostyle"
+            >Invercargill</a
+          ><br />
+          <span class="dropdown-item" onclick="closeDropDownList()"
+            >&times;</span
+          >
+        </div>
+      </div>
+      <hr />
+
+      <!-- This is the menu section -->
+      <div class="menu">
+        <h2 id="dgr">Dargaville</h2>
+        <ul id="restaurantList"></ul>
+      </div>
+
+      <!-- This is the content section -->
+      <div class="content" id="content"></div>
+
+      <a href="#t" class="back">Back to top.</a>
+    </div>
+
+    <script>
+      window.onload = function() {
+        // Getting the JSON file and parse
+        let url = "../DB/dargaville.json";
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            json = JSON.parse(this.responseText);
+            showData(json);
+            showMenu(json);
+          } else {
+            if (this.status == 404) {
+              document.getElementById("content").innerHTML =
+                '<p style="font-size:30px;margin-left:auto;margin-right:auto;">The data havent been updated yet...</p>';
+            }
+          }
+        };
+        request.open("get", url, true);
+        request.send();
+      };
+
+      // After get data from server, showData() will be called
+      // showData() is to make the data into HTML format
+      function showData(json) {
+        // text is to save the html string
+        let text = "";
+        let comment = "";
+        for (restaurantID in json) {
+          // for each restaurant
+          text +=
+            '<h3 class="cont" id="' +
+            json[restaurantID].restaurant.replace(/\s*/g, "");
+          text += '">' + json[restaurantID].restaurant + "</h3>";
+          comment = "";
+          text += '<div class="dishimage-container">';
+          for (dishID in json[restaurantID].dish) {
+            // for each dish
+            text +=
+              "<div id=" +
+              json[restaurantID].dish[dishID].Name.replace(/\s*/g, "") +
+              ' class="image-container" onclick=showComment("' +
+              json[restaurantID].dish[dishID].Name.replace(/\s*/g, "") +
+              '")>';
+            text +=
+              '<img src= "' +
+              json[restaurantID].dish[dishID].pic +
+              '" alt=' +
+              json[restaurantID].dish[dishID].Name +
+              ' class="image"/>';
+            text += '<div class="information">';
+            text += "<h4>" + json[restaurantID].dish[dishID].Name + "</h4>";
+            text += '<div class="tr">';
+            text += '<div class="td gray">Contain:</div>';
+            text +=
+              '<div class="td strong">' +
+              json[restaurantID].dish[dishID].Contain +
+              "</div>";
+            text += "</div>";
+            text += '<div class="tr">';
+            text += '<div class="td gray">Region:</div>';
+            text +=
+              '<div class="td strong">' +
+              json[restaurantID].dish[dishID].Region +
+              "</div>";
+            text += "</div>";
+            text += '<div class="tr">';
+            text += '<div class="td gray">Price:</div>';
+            text +=
+              '<div class="td strong">' +
+              json[restaurantID].dish[dishID].Price +
+              "</div>";
+            text += "</div>";
+            text +=
+              '<div class="strong">' +
+              json[restaurantID].dish[dishID].V +
+              "</div>";
+            text += "</div></div>";
+            comment +=
+              '<div id="comment' +
+              json[restaurantID].dish[dishID].Name.replace(/\s*/g, "") +
+              '"><div class="amber"> Amber:' +
+              json[restaurantID].dish[dishID].Amber +
+              '</div><br/><div class="vaughan"> Vaughan:' +
+              json[restaurantID].dish[dishID].Vaughan +
+              '</div><p onclick=backToView("' +
+              json[restaurantID].dish[dishID].Name.replace(/\s*/g, "") +
+              '") class="back">Back To gallery</p></div>';
+          }
+          text += '<div class="comment">' + comment + "</div></div>";
+        }
+        document.getElementById("content").innerHTML = text;
+      }
+
+      // showMenu() is to make menu section's HTML format
+      function showMenu(json) {
+        let text = "";
+        for (restaurantID in json) {
+          // for each restaurant
+          text +=
+            '<li> <h3 class="menu"> <a class="nostyle" href="#' +
+            json[restaurantID].restaurant.replace(/\s*/g, "");
+          text += '">' + json[restaurantID].restaurant + "</a> </h3> </li>";
+        }
+        document.getElementById("restaurantList").innerHTML = text;
+      }
+
+      // After the user click the picture,
+      // the picture move to the left hand side
+      // the right hand side appear a canvas
+      // then the commends appear on canvas
+      function showComment(dishname) {
+        let element = document.getElementById(dishname);
+        let parent = element.parentNode;
+        let siblings = parent.childNodes;
+        let dishid = 0;
+        for (let j = 0; j < siblings.length; j++) {
+          if (siblings[j].id != dishname) {
+            siblings[j].style.display = "none";
+          } else {
+            dishid = j;
+          }
+        }
+        let comment = parent.lastChild;
+        comment.style.display = "inline-block";
+        comment.style.opacity = "1";
+        let comments = parent.lastChild.childNodes;
+        comments[dishid].style.display = "block";
+      }
+
+      // backToView() is to undo the view comment
+      function backToView(dishname) {
+        let element = document.getElementById(dishname);
+        let parent = element.parentNode;
+        let siblings = parent.childNodes;
+        let dishid = 0;
+        for (let j = 0; j < siblings.length; j++) {
+          if (siblings[j].id != dishname) {
+            siblings[j].style.display = "inline-block";
+          } else {
+            dishid = j;
+          }
+        }
+        let comment = parent.lastChild;
+        comment.style.display = "none";
+        comment.style.opacity = "0";
+        let comments = parent.lastChild.childNodes;
+        comments[dishid].style.display = "none";
+      }
+    </script>
+  </body>
+</html>

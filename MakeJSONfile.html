@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="show"></div>
+    <!-- You have to place the show div before the script, 
+        so that the innerHTML exists when the script is loaded.-->
+    <script>
+      let wkaRestaurant = [
+        {
+          restaurant: "Charlie Brown Crêpes",
+          dish: [
+            {
+              Name: "Pomme D'amour",
+              pic: "./after_compression/PommeDamour.jpg",
+              Contain: "caramelised apples, caramel, whipped cream",
+              Region: "France",
+              Price: "$12",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let LumsdenRestaurant = [
+        {
+          restaurant: "Route 6 Cafe and Bar",
+          dish: [
+            {
+              Name: "what",
+              pic: "./after_compression/what23.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Jan 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what24.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Jan 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what25.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Jan 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what26.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Jan 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let ivcRestaurant = [
+        {
+          restaurant: "Bombay Palace Indian Restaurant & Takeaway",
+          dish: [
+            {
+              Name: "Rice",
+              pic: "./after_compression/Rice.jpeg",
+              Contain: "",
+              Region: "India",
+              Price: "$0",
+              V: "Vegan Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Mushroom Matar Masala",
+              pic: "./after_compression/MushroomMatarMasala.jpeg",
+              Contain: "",
+              Region: "India",
+              Price: "$18.9",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Kadhai Paneer",
+              pic: "./after_compression/KadhaiPaneer.jpeg",
+              Contain: "",
+              Region: "India",
+              Price: "$19.9",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Lachha Paratha",
+              pic: "./after_compression/LachhaParatha.jpeg",
+              Contain: "",
+              Region: "India",
+              Price: "$4.5",
+              V: "Vegan Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let wreRestaurant = [
+        {
+          restaurant: "Milk & Honey",
+          dish: [
+            {
+              Name: "Corn Chips",
+              pic: "./after_compression/CornChips.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Ice Coffee",
+              pic: "./after_compression/IceCoffee3.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "coffee",
+              pic: "./after_compression/coffee.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Pancake",
+              pic: "./after_compression/pancake.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Beef Burger",
+              pic: "./after_compression/BeefBurger1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Taste & See NZ",
+          dish: [
+            {
+              Name: "what",
+              pic: "./after_compression/what12.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what13.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what14.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what15.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what16.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what17.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Third Wheel Coffee Co.",
+          dish: [
+            {
+              Name: "Coffee",
+              pic: "./after_compression/coffee2.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Coffee",
+              pic: "./after_compression/coffee4.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Ice Coffee",
+              pic: "./after_compression/IceCoffee5.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what10.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what11.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "The second restaurant after three???",
+          dish: [
+            {
+              Name: "Burger",
+              pic: "./after_compression/burger.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Chips",
+              pic: "./after_compression/Chips1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Soup",
+              pic: "./after_compression/Soup1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Malasian restaurant???",
+          dish: [
+            {
+              Name: "Lychee Smooth",
+              pic: "./after_compression/LycheeSmooth.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegan Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what18.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what19.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what20.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what21.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let aklRestaurant = [
+        {
+          restaurant: "Canopius",
+          dish: [
+            {
+              Name: "Beef Burger",
+              pic: "./after_compression/BeefBurger.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$15",
+              V: "For Omnivore",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Ice coffee",
+              pic: "./after_compression/Icecoffee2.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "What",
+              pic: "./after_compression/what9.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Tai Ping Trading Co Limited",
+          dish: [
+            {
+              Name: "FriedNoodles",
+              pic: "./after_compression/FriedNoodles.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Buns and tea",
+              pic: "./after_compression/BunsNTea.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Casablanca",
+          dish: [
+            {
+              Name: "Turkish Coffee with Turkish delight ",
+              pic: "./after_compression/CoffeewithDelight.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$6",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Turkish Coffee with Turkish delight ",
+              pic: "./after_compression/CoffeewithDelight1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$6",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Mezze Platter",
+              pic: "./after_compression/MezzePlatter.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$29",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Lemonade Soda",
+              pic: "./after_compression/LemonadeSoda.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$6",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let hlzRestaurant = [
+        {
+          restaurant: "GG's Cafe",
+          dish: [
+            {
+              Name: "Ice Coffee",
+              pic: "./after_compression/IceCoffee4.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what22.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "coffee",
+              pic: "./after_compression/coffee8.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "brownie",
+              pic: "./after_compression/brownie.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "The Chilli House",
+          dish: [
+            {
+              Name: "Dandan Noodles (Vegetarian)",
+              pic: "./after_compression/DandanNoodles.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Stir-fried Shredded Potatoes",
+              pic: "./after_compression/StirfriedShreddedPotatoes.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Boiled Dumplings",
+              pic: "./after_compression/BoiledDumplings.jpg",
+              Contain:
+                "Veggie Dumplings (Chives, mushroom, glass noodles and cabbage)",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Nov 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let dudRestaurant = [
+        {
+          restaurant: "Morning Magpie",
+          dish: [
+            {
+              Name: "Ice coffee",
+              pic: "./after_compression/IceCoffee.jpg",
+              Contain: "coffee, milk, cream, ice cream",
+              Region: "",
+              Price: "$7",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber:
+                "This is my favourite coffee that I tried in all the cafe. It is sweet.",
+              Vaughan:
+                "The coffee you like doesn't taste like coffee to me. It is too sweet that tastes like dessert."
+            },
+            {
+              Name: "Brownie",
+              pic: "./after_compression/Brownie2.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Feb 2020",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what30.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Union Co Cafe",
+          dish: [
+            {
+              Name: "Mochaccino",
+              pic: "./after_compression/Mochaccino.jpg",
+              Contain: "Coffee, Hot chocolate, Milk",
+              Region: "",
+              Price: "$?",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "What",
+              pic: "./after_compression/what1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Panforte and Long black",
+              pic: "./after_compression/PanforteAndLongBlack.jpg",
+              Contain: "You may want to ask",
+              Region: "Italy (dessert)",
+              Price: "$? &amp; $?",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Impression Manor",
+          dish: [
+            {
+              Name: "Buddha's Feast",
+              pic: "./after_compression/BuddhaFeast.jpg",
+              Contain: "Soybean skin, Cabbage, Broccoli, Mushroom, Carrot",
+              Region: "China",
+              Price: "$16",
+              V: "Vegan Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Sauteed potato, green pepper and eggplant",
+              pic: "./after_compression/SauteedpotatoGreenpepperEggplant.jpg",
+              Contain: "potato, green pepper, eggplant",
+              Region: "North part of China",
+              Price: "$20",
+              V: "Vegan Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Crispy fried tofu with spicy garlic sauce",
+              pic: "./after_compression/YuXiangCuiPiDouFu.jpg",
+              Contain: "Tofu",
+              Region: "China",
+              Price: "$20",
+              V: "Vegan Friendly",
+              LastTimeWent: "",
+              Amber:
+                "To Chinese, it is not that spicy, but it is a little bit spicy for kiwis. The sauce tastes very nice with rice.",
+              Vaughan: ""
+            },
+            {
+              Name: "Fried banana with pulled sugar",
+              pic: "./after_compression/BaSiXiangJiao.jpg",
+              Contain: "banana, sugar",
+              Region: "China",
+              Price: "$11",
+              V: "Vegan Friendly",
+              LastTimeWent: "",
+              Amber:
+                "Actually there is another choice, purple sweet potatoes. Vaughan and I ordered the last time and found the potato was quite hard and the flavour didn't quite fit the crispy sugar. So the potatoes one is not as delicious as the banana. But the Fried potatoes with pulled sugar is a very famous Chinese dessert in China. The potatoes in China was very soft and its cover is very crispy, much nicer than the purple sweet potatoes here. The fried banana with sugar was surprisingly delicious.",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Miga Hako",
+          dish: [
+            {
+              Name: "?",
+              pic: "./after_compression/kasudon.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "?",
+              pic: "./after_compression/what.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Mamacita Taqueria",
+          dish: [
+            {
+              Name: "TACOS (FRIED CHICKEN)",
+              pic: "./after_compression/TACOSFriedChicken.jpg",
+              Contain: "bread, fried chicken, veges",
+              Region: "Mexican",
+              Price: "$14(for 2)",
+              V: "For Omnivore",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "CHIMICHANGA",
+              pic: "./after_compression/Chimichanga.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "The Jitsu",
+          dish: [
+            {
+              Name: "Vege soup and Miso soup",
+              pic: "./after_compression/Soup.jpg",
+              Contain: "",
+              Region: "Japan",
+              Price: "$0 (if you order some specific dish)",
+              V: "Vegan Friendly (Vege soup) / For Omnivore (Miso soup)",
+              LastTimeWent: "",
+              Amber:
+                "I snap Vaughan's Vege soup and like it better than my Miso soup. The Vege soup tastes like the cucumber and egg soup in China and remained me of my childhood. And Miso soup tastes quite like that I tried in Japan and I found I never like it. Vaughan said I could ask them to change my soup to Vege soup next time.",
+              Vaughan: ""
+            },
+            {
+              Name: "CHICKEN KATSU CURRY",
+              pic: "./after_compression/ChickenKatsuCurry.jpg",
+              Contain: "",
+              Region: "Japan",
+              Price: "$13.5",
+              V: "For Omnivore",
+              LastTimeWent: "",
+              Amber:
+                "The sauce is sweeter than I expect. I expect the curry is more creamy and salt and the Mayonnaise sauce could be added to add more flavour.",
+              Vaughan: ""
+            },
+            {
+              Name: "BENTO BOX (TOFU)",
+              pic: "./after_compression/BENTOBoxTofu.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$16",
+              V: "Vegan Friendly",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Papa Chou's Yum Cha Chinese Dining",
+          dish: [
+            {
+              Name: "Hedgehog shaped purple kumara buns",
+              pic: "./after_compression/Hedgehog.jpg",
+              Contain: "floor, purple sweet potato",
+              Region: "South of China",
+              Price: "$4.5",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "",
+              Amber:
+                "This is one dish that we tried in Chinese restaurant's Yum Cha. I like the taste of the filling.",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Buster Greens Real Food Room",
+          dish: [
+            {
+              Name: "waffle",
+              pic: "./after_compression/waffle.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "smoothie",
+              pic: "./after_compression/smoothie.jpg",
+              Contain: "",
+              Region: "",
+              Price: "",
+              V: "",
+              LastTimeWent: "",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Hell Pizza",
+          dish: [
+            {
+              Name: "Buffalo",
+              pic: "./after_compression/Buffalo.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$12 (snack size)",
+              V: "For Omnivore",
+              LastTimeWent: "",
+              Amber:
+                "I quite like it because it is rich with the taste of cheese. Meanwhile, the basil pesto balanced the rich taste.",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Burger Plant",
+          dish: [
+            {
+              Name: "Chook Burger & The Big Boi",
+              pic: "./after_compression/ChookBurgerNTheBigBoi.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$12 (Chook Burger) $14 (The Big Boi)",
+              V: "Vegan Friendly",
+              LastTimeWent: "Feb 2020",
+              Amber:
+                "I got the Chook Burger(kind of like chicken burger), it is very delicious. The fried patty is very crispy. Vaughan took a bite of my burger, he likes mine than his.",
+              Vaughan: "I got the Big Boi."
+            },
+            {
+              Name: "Chocolate Heaven",
+              pic: "./after_compression/ChocolateHeaven.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$9",
+              V: "Vegan Friendly",
+              LastTimeWent: "Feb 2020",
+              Amber:
+                "I got the donuts, but it is not as nice as I thought. The main part chocolate is not that much.",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Golden Island",
+          dish: [
+            {
+              Name: "Mapo doufu",
+              pic: "./after_compression/MapoDoufu.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$16",
+              V: "For Omnivore",
+              LastTimeWent: "Jan 2020",
+              Amber:
+                "It contains mince, but if you want to make it Vegetarian you can ask them not to put meat. It is quite delicious.",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Wolf at the Door",
+          dish: [
+            {
+              Name: "ice coffee",
+              pic: "./after_compression/iceCoffee1.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$7.5",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Jan 2020",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what2",
+              pic: "./after_compression/what2.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$?",
+              V: "For ?",
+              LastTimeWent: "Jan 2020",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Home Edition",
+          dish: [
+            {
+              Name: "Char Kuey Teow (Tofu)",
+              pic: "./after_compression/CharKueyTeow.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$16",
+              V: "Vegetarian Friendly",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/What4.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$?",
+              V: "For ?",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Modaks Espresso",
+          dish: [
+            {
+              Name: "Hash Attack Bagel",
+              pic: "./after_compression/HashAttackBagel.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$15.5",
+              V: "",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Savoury Scroll",
+              pic: "./after_compression/SavouryScroll.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$?",
+              V: "For ?",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "What",
+              pic: "./after_compression/what7.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "what",
+              pic: "./after_compression/what8.jpeg",
+              Contain: "",
+              Region: "",
+              Price: "$?",
+              V: "For ?",
+              LastTimeWent: "Dec 2019",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Gelato Junkie",
+          dish: [
+            {
+              Name: "Ice cream",
+              pic: "./after_compression/IceCream.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$",
+              V: "Vegan Friendly",
+              LastTimeWent: "Jan 2020",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        },
+        {
+          restaurant: "Best Cafe",
+          dish: [
+            {
+              Name: "Blue Cod Burger",
+              pic: "./after_compression/BlueCodBurger.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$21",
+              V: "",
+              LastTimeWent: "Jan 2020",
+              Amber: "",
+              Vaughan: ""
+            },
+            {
+              Name: "Chips & Eggs",
+              pic: "./after_compression/ChipsNEggs.jpg",
+              Contain: "",
+              Region: "",
+              Price: "$12",
+              V: "",
+              LastTimeWent: "Jan 2020",
+              Amber: "",
+              Vaughan: ""
+            }
+          ]
+        }
+      ];
+
+      let amberPreference = [
+        {
+          Name: "Not Butter chicken",
+          pic: "./after_compression/ButterChicken.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Teriyaki",
+          pic: "./after_compression/Teriyaki.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Green curry",
+          pic: "./after_compression/GreenCurry.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Fried rice",
+          pic: "./after_compression/FriedRice.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Chips",
+          pic: "./after_compression/Chips.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Nachos",
+          pic: "./after_compression/Nachos.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Taco",
+          pic: "./after_compression/Taco.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Brownie",
+          pic: "",
+          recipe: ""
+        },
+        {
+          Name: "Cinnamon Rolls",
+          pic: "./after_compression/Cinnamon Rolls.jpg",
+          recipe: ""
+        },
+        {
+          Name: "Smoothie",
+          pic: "",
+          recipe: ""
+        }
+      ];
+
+      let aklJSON = JSON.stringify(aklRestaurant);
+      let dudJSON = JSON.stringify(dudRestaurant);
+      let wkaJSON = JSON.stringify(wkaRestaurant);
+      let ivcJSON = JSON.stringify(ivcRestaurant);
+      let wreJSON = JSON.stringify(wreRestaurant);
+      let hlzJSON = JSON.stringify(hlzRestaurant);
+      let LumsdenJSON = JSON.stringify(LumsdenRestaurant);
+      let apJSON = JSON.stringify(amberPreference);
+      document.getElementById("show").innerHTML = hlzJSON;
+    </script>
+  </body>
+</html>

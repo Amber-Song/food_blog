@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Not Butter chicken",
+    "pic": "../after_compression/ButterChicken.jpg",
+    "recipe": ""
+  },
+  {
+    "Name": "Teriyaki",
+    "pic": "../after_compression/Teriyaki.jpg",
+    "recipe": ""
+  },
+  {
+    "Name": "Green curry",
+    "pic": "../after_compression/GreenCurry.jpg",
+    "recipe": ""
+  },
+  {
+    "Name": "Fried rice",
+    "pic": "../after_compression/FriedRice.jpg",
+    "recipe": ""
+  },
+  { "Name": "Chips", "pic": "../after_compression/Chips.jpg", "recipe": "" },
+  { "Name": "Nachos", "pic": "../after_compression/Nachos.jpg", "recipe": "" },
+  { "Name": "Taco", "pic": "../after_compression/Taco.jpg", "recipe": "" },
+  { "Name": "Brownie", "pic": "", "recipe": "" },
+  { "Name": "Smoothie", "pic": "", "recipe": "" }
+]

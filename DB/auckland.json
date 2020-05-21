@@ -1,0 +1,116 @@
+[
+  {
+    "restaurant": "Canopius",
+    "dish": [
+      {
+        "Name": "Beef Burger",
+        "pic": "../after_compression/BeefBurger.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$15",
+        "V": "For Omnivore",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Ice coffee",
+        "pic": "../after_compression/Icecoffee2.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "What",
+        "pic": "../after_compression/what9.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "E-Pacs Vegetarian Supermarket",
+    "dish": [
+      {
+        "Name": "FriedNoodles",
+        "pic": "../after_compression/FriedNoodles.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Buns and tea",
+        "pic": "../after_compression/BunsNTea.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "Casablanca",
+    "dish": [
+      {
+        "Name": "Turkish Coffee with Turkish delight ",
+        "pic": "../after_compression/CoffeewithDelight.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$6",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Turkish Coffee with Turkish delight ",
+        "pic": "../after_compression/CoffeewithDelight1.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$6",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Mezze Platter",
+        "pic": "../after_compression/MezzePlatter.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$29",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Lemonade Soda",
+        "pic": "../after_compression/LemonadeSoda.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$6",
+        "V": "",
+        "LastTimeWent": "Nov 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  }
+]

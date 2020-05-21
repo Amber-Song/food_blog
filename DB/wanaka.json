@@ -1,0 +1,18 @@
+[
+  {
+    "restaurant": "Charlie Brown Crêpes",
+    "dish": [
+      {
+        "Name": "Pomme D'amour",
+        "pic": "../after_compression/PommeDamour.jpg",
+        "Contain": "caramelised apples, caramel, whipped cream",
+        "Region": "France",
+        "Price": "$12",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "Dec 2019",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  }
+]

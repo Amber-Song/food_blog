@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amber's preference</title>
+    <link rel="stylesheet" type="text/css" href="../static/FoodBlog.css" />
+  </head>
+
+  <body>
+    <div id="t" class="web-page">
+      <!-- This is the title section -->
+      <h1 id="title">Amber's preference</h1>
+      <p class="title-text">
+        I always can't remember the name of the food I like and that is why this
+        page is made.
+      </p>
+      <button onclick="changeStyle()">Change Style</button>
+      <hr />
+
+      <!-- This is the content section -->
+      <!-- To show the pictures as gallery -->
+      <div class="gallery" id="gallery"></div>
+      <!-- To show the pictures as list -->
+      <div class="list" id="list"></div>
+
+      <a href="#t" class="back">Back to top.</a>
+
+      <script>
+        window.onload = function() {
+          let url = "../DB/amberpreference.json";
+          let request = new XMLHttpRequest();
+          request.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              json = JSON.parse(this.responseText);
+              getGalleryHTML(json);
+              getListHTML(json);
+            } else {
+              if (this.status == 404) {
+                document.getElementById("list").innerHTML =
+                  '<p style="font-size:30px;margin-left:auto;margin-right:auto;">The data havent been updated yet...</p>';
+                document.getElementById("gallery").innerHTML =
+                  '<p style="font-size:30px;margin-left:auto;margin-right:auto;">The data havent been updated yet...</p>';
+              }
+            }
+          };
+          request.open("get", url, true);
+          request.send();
+        };
+
+        // getGalleryHTML(json) is to make the innerHTML of gallery
+        function getGalleryHTML(json) {
+          let text = "";
+          for (dishID in json) {
+            text +=
+              '<div id="' +
+              json[dishID].Name.replace(/\s*/g, "") +
+              '" class="image-container">';
+            text +=
+              '<img src="' +
+              json[dishID].pic +
+              '" alt="' +
+              json[dishID].Name +
+              '" class="image"/>';
+            text += '<div class="information">';
+            text += "<h4>" + json[dishID].Name + "</h4>";
+            text += "</div></div>";
+          }
+          document.getElementById("gallery").innerHTML = text;
+        }
+
+        // getListHTML(json) is to make the innerHTML of list
+        function getListHTML(json) {
+          let text = "";
+
+          for (dishID in json) {
+            if (dishID + 1) {
+              text +=
+                '<div style="border-bottom: 1px solid wheat; margin-bottom: 15px; display: block; clear: both; vertical-align: center; position: relative;">';
+              text +=
+                '<div style="float:left; display:inline-block; font-size:larger; vertical-align: center;">NO ' +
+                dishID +
+                ".</div>";
+              text +=
+                '<div style="float:left; display:inline-block; font-size:larger; margin-top: auto; margin-bottom: auto;">' +
+                json[dishID].Name +
+                "</div>";
+              text +=
+                '<img src="' +
+                json[dishID].pic +
+                '" alt="' +
+                json[dishID].Name +
+                '" style="float: left;display: inline-block; position: absolute; left: 250px; height: 300px; width: 300px; object-fit: contain; -o-object-fit: contain;"/>';
+              text += "</div><br/>";
+            }
+          }
+
+          document.getElementById("list").innerHTML = text;
+        }
+
+        // changeStyle() is to change the style between gallery and list
+        function changeStyle() {
+          let styleG = document.getElementById("gallery");
+          let styleL = document.getElementById("list");
+          if (styleL.style.display == "block") {
+            styleL.style.display = "none";
+            styleG.style.display = "block";
+          } else {
+            styleL.style.display = "block";
+            styleG.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
