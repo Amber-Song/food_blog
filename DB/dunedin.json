@@ -148,6 +148,28 @@
         "LastTimeWent": "",
         "Amber": "",
         "Vaughan": ""
+      },
+      {
+        "Name": "Kimchi Ramen",
+        "pic": "../after_compression/KimchiRamen.jpg",
+        "Contain": "",
+        "Region": "Japanese",
+        "Price": "$12",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Bibimbap",
+        "pic": "../after_compression/Bibimbap.jpg",
+        "Contain": "",
+        "Region": "Korea",
+        "Price": "$8",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
       }
     ]
   },

@@ -12,6 +12,224 @@
         "LastTimeWent": "Dec 2019",
         "Amber": "",
         "Vaughan": ""
+      },
+      {
+        "Name": "Charlie Brown",
+        "pic": "../after_compression/CharlieBrown.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$12",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "Burrito Craft",
+    "dish": [
+      {
+        "Name": "Mushroom taco",
+        "pic": "../after_compression/MushroomTacoF.jpg",
+        "Contain": "",
+        "Region": "Mexican",
+        "Price": "$18",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Mushroom taco",
+        "pic": "../after_compression/MushroomTacoB.jpg",
+        "Contain": "",
+        "Region": "Mexican",
+        "Price": "$18",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "Firebird",
+    "dish": [
+      {
+        "Name": "Firebird Burger",
+        "pic": "../after_compression/FirebirdBurger.jpg",
+        "Contain": "",
+        "Region": "",
+        "Price": "$14",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "Bombay Palace Wanaka",
+    "dish": [
+      {
+        "Name": "Starter",
+        "pic": "../after_compression/IndianStarter.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Vegetable Platter",
+        "pic": "../after_compression/VegetablePlatter.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "$26",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Tandoori Roti",
+        "pic": "../after_compression/TandooriRoti.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "$4",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Mushroom Shimla Mirch",
+        "pic": "../after_compression/MushroomShimlaMirch.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "$21.9",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Matar Paneer",
+        "pic": "../after_compression/MatarPaneer.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "$22.9",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Raita",
+        "pic": "../after_compression/Raita.jpg",
+        "Contain": "",
+        "Region": "Indian",
+        "Price": "$",
+        "V": "",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      }
+    ]
+  },
+  {
+    "restaurant": "Pembroke Patisserie",
+    "dish": [
+      {
+        "Name": "CHOCOLATE ÉCLAIR",
+        "pic": "../after_compression/CHOCOLATEÉCLAIR.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$6",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "ALMOND CROISSANT",
+        "pic": "../after_compression/ALMONDCROISSANT.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$7",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "Very tasty!",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Lemon Meringue Pie",
+        "pic": "../after_compression/LemonMeringuePie.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$6",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "St. Honore",
+        "pic": "../after_compression/StHonore.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$10",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Florentine",
+        "pic": "../after_compression/FlorentineF.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$5",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Florentine",
+        "pic": "../after_compression/FlorentineB.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$5",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "Canele",
+        "pic": "../after_compression/Canele.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$3.5",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "",
+        "Vaughan": ""
+      },
+      {
+        "Name": "?",
+        "pic": "../after_compression/What31.jpg",
+        "Contain": "",
+        "Region": "France",
+        "Price": "$?",
+        "V": "Vegetarian Friendly",
+        "LastTimeWent": "July 2020",
+        "Amber": "This is the bigest superise to me.",
+        "Vaughan": ""
       }
     ]
   }
